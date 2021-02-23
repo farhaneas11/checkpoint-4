@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* variables */
+html {
+    font-size: 16px;
+}
+/*Container */
+.container{margin: 0px auto;
+    max-width:1350px;
+    padding: 0px 32px;
+}
+.container2 {
+    margin: 0px auto;
+    max-width:1100px;
+    padding: 0px 32px;
+}
+
+/* resets  */
+*::before,*::after {
+box-sizing: border-box;
+}
+ /* body   */
+a { 
+    text-decoration: none;
+}
+body { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+body button{
+    border: 0;
+}
+body p{
+    line-height: 1.7;
+}
+body a:hover{
+    color: wheat;
+}
+body button:hover {
+    color: wheat;
+    background-color:#ea553396 ;
+}
+/*   flex */
+
+
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.align-center {
+    align-content: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+/*              Root            */
+:root{
+    --primary:white;
+    --secondary:#FEF9F7;
+    --tertiary:#EA5433;
+    --heading:#554945;
+    --text:#787675;
+    --blog:black;
+}
+/*               widths             */
+.width-20 {
+    flex: 0 1 20%;
+}
+.width-25{
+    flex: 0 1 25%;
+}
+.width-31{
+    flex: 0 1 31%;   /*blog*/
+}
+.width-35{
+    flex:0 1 34% ;
+}
+
+/* box-shadow  */
+.box-shadow {
+    box-shadow:5px 10px 18px #888888 ;    
+    margin-top: 3rem;
+}
+
+
+/*                  header                     */
+.header-nav {
+    padding: 1rem 0;
+    /*position: fixed;*/
+    width: 100%;
+    background-color: white;
+}
+.header-nav h6{
+    color: var(--heading);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.nav-bar-head li{
+    margin-left: 1.9rem;
+}
+.nav-bar-head a{
+    font-size: 0.9rem;
+    color: var(--heading);
+    font-weight: 600;
+}
+.sub-menu {
+    position: relative;
+}
+.sub-menu:hover .drop-nav {
+    display: inline-block;
+}
+.drop-nav{
+    padding: 0.9rem 2rem;
+    position: absolute;
+    width:100px;
+    background-color: var(--primary);
+    display: none;
+    transform:translateX(-40%) ;
+    left: 50%;
+    top: 30px;
+    box-shadow:5px 10px 18px #888888 ;
+    border-radius: 12px;
+}
+.drop-nav li{
+    margin: 0.6rem 0;
+}
+.sub-menu-2 {
+    position: relative;
+}
+.sub-menu-2:hover .sub-sub-menu {
+    display: inline-block;
+}
+.sub-sub-menu {
+    padding: 0.9rem 1rem;
+    position: absolute;
+    width:100px;
+    background-color: var(--primary);
+    display: none;
+    box-shadow:5px 10px 18px #888888 ;
+    border-radius: 12px;
+}
+
+
+
+/*                  main-blog                            */
+/* one */
+.one {
+    padding: 1rem 0;
+    background-color: #F4F2F2;
+}
+.one span{
+    color:var(--heading);
+    font-size: 0.8rem;    
+}
+.one span em{
+    color: var(--tertiary);
+    margin-right: 0.5rem;
+    font-weight: 500;
+}
+.one h6{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--heading);
+    margin-top: 00.5rem;
+}
+/* two */
+.two{
+    padding: 1.5rem 0;
+}
+.two-art-blog {
+    padding: 1rem;
+}
+.two h5{
+    color: var(--heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.two span{
+    font-size: 0.8rem;
+    color: grey;
+}
+.two p{
+    color: black;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+.image-width-blog {
+    width: 100%;   
+}
+.image-width-blog img{
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.right-side-blog {
+    text-align:right ;
+}
+.right-side-blog button{
+    background-color: var(--tertiary);
+    color: var(--primary);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.9rem;
+}
+
+
+.pages-no {
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+.pages-no span{
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(240, 239, 239, 0.493);
+    margin-right: 0.5rem;
+    color: var(--text);
+}
+.color-tertiary {
+    background-color: var(--tertiary);    
+}
+/* three */
+
+.three {
+    padding: 2rem 0;    
+    background-color: var(--secondary);
+}
+.three li{
+    list-style-type: none;
+    margin-bottom: 0.8rem;
+    margin-left: 00.5rem;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+.three li:before{
+    content:'\02C3' ;
+    padding-right: 8px;
+    color: #EA5433;
+}
+.three h6{
+    color: var(--heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.three h5{
+    font-size: 1.5rem;
+    color: var(--heading);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.three address{
+    color:var(--text) ;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.three address em{
+    font-weight:600;
+    color: var(--heading);
+    margin-right: 0.5rem;
+}
+.three p{
+    color: var(--text);
+    font-size: 00.9rem;
+    margin-bottom: 0.5rem;
+}
+.blog-subs {
+    padding: 0.5rem 4.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--tertiary);
+}
+.three span a{
+    background-color: var(--tertiary);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    color: var(--primary);
+}
+
+/*                  footer                   */
+.footer-nav {
+    padding: 1rem 0;    
+}
+.footer-nav p{
+    color: var(--text);
+    font-size: 00.8rem;
+}
+.footer-nav p span{
+    color: var(--tertiary);
+}
+.footer-nav p em{
+    color: var(--heading);
+    font-family: 600;
+}
+.nav-foot li {
+    margin-left: 0.2rem;
+}
+.nav-foot i{
+    padding: 0.5rem 0.9rem;
+    color:var(--primary) ;
+    background-color:var(--tertiary) ;
+    font-size: 0.8rem;
+    border-radius: 1.8rem;
+}
