@@ -181,6 +181,10 @@ body button:hover {
 .sub-menu-2 {
     position: relative;
 }
+.sub-menu-2 i{
+    font-size: 00.7rem;
+    margin-left: 0.1rem;
+}
 .sub-menu-2:hover .sub-sub-menu {
     display: inline-block;
 }
@@ -248,7 +252,9 @@ body button:hover {
     -o-object-fit: cover;
     object-fit: cover;
 }
-
+.two i{
+    margin-right: 0.2rem;
+}
 .right-side-blog {
     text-align:right ;
 }
@@ -349,7 +355,7 @@ body button:hover {
     margin-left: 0.2rem;
 }
 .nav-foot i{
-    padding: 0.5rem 0.9rem;
+    padding: 0.5rem 0.7rem;
     color:var(--primary) ;
     background-color:var(--tertiary) ;
     font-size: 0.8rem;
